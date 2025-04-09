@@ -11,4 +11,12 @@ def init_db():
                 balance REAL DEFAULT 0.0
             )
         """)
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS cart (
+                user_id INTEGER,
+                product_id INTEGER,
+                quantity INTEGER,
+                PRIMARY KEY (user_id, product_id)
+            )
+        """)
         conn.commit()

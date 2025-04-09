@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "brand": "Samsung",
+      "model": "QLED Q60B",
+      "price": 18999
+    },
+    {
+      "id": 2,
+      "brand": "LG",
+      "model": "NanoCell 75UQ80006LB",
+      "price": 21999
+    },
+    {
+      "id": 3,
+      "brand": "Sony",
+      "model": "Bravia XR-55A80J",
+      "price": 32999
+    }
+  ]
+  

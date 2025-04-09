@@ -1,7 +1,7 @@
 import asyncio
 from aiogram import Bot, Dispatcher, Router
 from config import API_TOKEN, BOT_PROPERTIES
-from handlers import start, register, balance, topup
+from handlers import start, register, balance, topup, catalog, cart
 from database.models import init_db
 
 bot = Bot(token=API_TOKEN, default=BOT_PROPERTIES)
@@ -12,7 +12,9 @@ router.include_routers(
     start.router,
     register.router,
     balance.router,
-    topup.router
+    topup.router,
+    catalog.router,
+    cart.router
 )
 
 dp.include_router(router)
